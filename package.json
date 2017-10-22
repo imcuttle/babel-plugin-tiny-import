@@ -1,0 +1,22 @@
+{
+  "name": "babel-plugin-tiny-import",
+  "version": "0.0.0",
+  "description": "split import from wrap package",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "peerDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-types": "^6.26.0"
+  },
+  "dependencies": {
+  }
+}
