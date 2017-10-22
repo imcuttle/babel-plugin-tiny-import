@@ -5,4 +5,4 @@
 
 
 module.exports = require('./lib/plugins/tiny-import');
-module.exports.getEazyModuleMapper = require('./lib/plugins/exports-path-map');
+module.exports.getEazyModuleMapper = require('./lib/easy-module-mapper');
