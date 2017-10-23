@@ -17,5 +17,16 @@
     "babel-core": "^6.26.0",
     "babel-types": "^6.26.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcuttle/babel-plugin-tiny-import.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imcuttle/babel-plugin-tiny-import/issues"
+  },
+  "homepage": "https://github.com/imcuttle/babel-plugin-tiny-import#readme"
 }
