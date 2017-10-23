@@ -8,6 +8,9 @@ export * from './lib/utils';
 export {resolve as rlv} from './lib/path';
 
 exports.join = require('lib/path/join');
+// not supported
+module.exports.notSupported = require('./lib/path/extname').notSupported;
+
 module.exports.join = require('./lib/path/extname');
 module.exports.extname = require('./lib/path-2/extname');
 

@@ -3,30 +3,30 @@ import {rlv, join as Join} from '@befe/wrap'
 const {outerToolFunction: $outerToolFunction} = require('@befe/wrap')
 
 import {
-    Button as NativeButton, Select,
+    Button as NativeButton,
     outerToolFunction as toolFunction,
     Tool,
     XNotFound as NotFound
 } from '@befe/wrap'
 
+let {
+    Button: requiredButton,
+    injectComponent,
+    // join
+} = require('@befe/wrap');
+
+// Not Supported Yet.
+let notSupported = require('@befe/wrap').join;
+let {supported: alsoNotSupported} = require('@befe/wrap');
+
+let {join: supported} = require('@befe/wrap');
+
+const {formItemRenderer} = require('@befe/wrap');
+
 import {
     Text,
     Textarea,
-    default as join,
+    // default as join,
     exitName,
     extname as innerExtname
 } from '@befe/wrap'
-
-
-// exitName = 123;
-console.log(exitName);
-
-var x = require('a').default || require('a')
-
-const {Password: LocalPass, Popup} = require('@befe/wrap'),
-    {NotFound: NotFoundLocalButton} = require('@befe/wrap');
-
-var unused = require('ssds');
-// console.log(unused);
-
-const {FormItem} = require('@befe/wrap');

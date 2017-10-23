@@ -44,3 +44,31 @@ const $outerToolFunction = require("lib/tool").toolFunction;
     },
 }
 ```
+
+## Note!!!
+
+the syntax of `require` is not supported yet, which are as follow.
+
+- wrap.js  
+```javascript
+exports.supported = require('lib/total/support');
+// MemberExpression
+exports.notSupported = require('lib/total').notSupported;
+```
+
+- Input  
+```javascript
+// MemberExpression
+const notSupported = require('wrap').supported;
+const {notSupported: alsoNotSupported} = require('wrap');
+
+let {supported} = require('@befe/wrap');
+```
+
+- Output  
+```javascript
+const notSupported = require('wrap').supported;
+const {notSupported: alsoNotSupported} = require('wrap');
+
+let supported = require('lib/total/support');
+```
