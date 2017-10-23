@@ -1,5 +1,6 @@
 
 import {rlv, join as Join} from '@befe/wrap'
+import {injectComponent as injectComponent2} from '@befe/wrap'
 const {outerToolFunction: $outerToolFunction} = require('@befe/wrap')
 
 import {
