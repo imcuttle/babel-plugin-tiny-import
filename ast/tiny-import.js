@@ -15,10 +15,12 @@ const ret = babel.transformFromAst(ast, null, {
     plugins: [
         [nps.join(__dirname, '../lib/plugins/tiny-import.js'), {
             test: /^@befe\/wrap$/,
-            moduleMapper: nps.join(__dirname, '../fixture/wrap.js'),// 'lib',
+            // actualTest: '@befe/wrap/v2',
+            // moduleMapper: nps.join(__dirname, '../fixture/wrap.js'),// 'lib',
+            moduleMapper: '',
             easyModuleMapper: {
                 // `true` means that opt.moduleMapper will be regarded as filename
-                enable: true,
+                enable: false,
                 watch: true,
                 basename: false,
             },

@@ -7,6 +7,7 @@ import {
     Button as NativeButton,
     outerToolFunction as toolFunction,
     Tool,
+    Total,
     XNotFound as NotFound
 } from '@befe/wrap'
 
