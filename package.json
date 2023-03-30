@@ -11,15 +11,12 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "@babel/parser": "^7.21.3"
   },
-  "peerDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-types": "^6.26.0"
-  },
+  "peerDependencies": {},
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-types": "^6.26.0"
+    "@babel/core": "^7.21.3"
   },
   "files": [
     "lib"
