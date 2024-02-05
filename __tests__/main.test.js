@@ -48,9 +48,9 @@ import { B as X } from './components-wrapper';"
     });
     it('resolve package path', function () {
         expect(transformFile(fixture('consumer-package.ts'))).toMatchInlineSnapshot(`
-"export DPkg from "/Users/bytedance/github/babel-plugin-tiny-import/__tests__/fixture/node_modules/d/main.ts";
-export EPkg from "/Users/bytedance/github/babel-plugin-tiny-import/__tests__/fixture/node_modules/e/main.js";
-export FPkg from "/Users/bytedance/github/babel-plugin-tiny-import/__tests__/fixture/node_modules/f/main.js";
+"export DPkg from "../node_modules/d/main.ts";
+export EPkg from "../node_modules/e/main.js";
+export FPkg from "../node_modules/f/main.js";
 export { NotFound } from 'comps';
 import E from 'e';"
 `)
@@ -68,9 +68,20 @@ import E from 'e';"
     }
   }
 })).toMatchInlineSnapshot(`
-"export DPkg from "/Users/bytedance/github/babel-plugin-tiny-import/__tests__/fixture/node_modules/d/main.ts";
-export EPkg from "/Users/bytedance/github/babel-plugin-tiny-import/__tests__/fixture/node_modules/e/main.es.js";
-export FPkg from "/Users/bytedance/github/babel-plugin-tiny-import/__tests__/fixture/node_modules/f/main.browser.js";
+"export DPkg from "../node_modules/d/main.ts";
+export EPkg from "../node_modules/e/main.es.js";
+export FPkg from "../node_modules/f/main.browser.js";
+export { NotFound } from 'comps';
+import E from 'e';"
+`)
+    });
+    it('resolve package path 3', function () {
+        expect(transformFile(fixture('consumer-package.ts'), {
+  easyModuleMapper: { resolvePackageAsAbsolute: false }
+})).toMatchInlineSnapshot(`
+"export DPkg from "d";
+export EPkg from "e";
+export FPkg from "f";
 export { NotFound } from 'comps';
 import E from 'e';"
 `)
