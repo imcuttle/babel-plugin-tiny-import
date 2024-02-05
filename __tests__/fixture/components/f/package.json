@@ -1,0 +1,9 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "main.js",
+  "module": "main.es.js",
+  "browser": "main.browser.js",
+  "dependencies": {
+  }
+}

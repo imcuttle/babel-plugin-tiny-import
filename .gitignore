@@ -2,4 +2,6 @@
 ~*
 dist/
 node_modules/
+.DS_Store
 
+!__tests__/fixture/node_modules/

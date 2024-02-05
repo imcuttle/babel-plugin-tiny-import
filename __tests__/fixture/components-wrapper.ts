@@ -1,0 +1,12 @@
+export { AProps } from './components/a'
+export type { AType } from './components/a'
+export A from './components/a'
+export { default as B } from './components/b'
+export { default as C } from './components/c'
+export { default as D } from './components/d'
+export { default as E } from './components/e'
+export { default as F } from './components/f'
+
+export { default as DPkg } from 'd'
+export { default as EPkg } from 'e'
+export { default as FPkg } from 'f'
