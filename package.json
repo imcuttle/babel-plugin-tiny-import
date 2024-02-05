@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-tiny-import",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "split import from wrap package",
   "private": false,
   "main": "index.js",
