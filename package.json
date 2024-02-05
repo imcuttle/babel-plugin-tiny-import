@@ -5,7 +5,8 @@
   "private": false,
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm test"
   },
   "keywords": [],
   "author": "",
