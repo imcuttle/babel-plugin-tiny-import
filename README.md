@@ -41,6 +41,7 @@ const $outerToolFunction = require("lib/tool").toolFunction;
         watch: true,
         // the basename of opt.moduleMapper file's *Relative Module*.
         basename: false, // true | false | string
+        resolvePackageAsAbsolute, // boolean | https://www.npmjs.com/package/resolve options, false by default
     },
 }
 ```
