@@ -48,10 +48,11 @@ import { B as X } from './components-wrapper';"
     });
     it('resolve package path', function () {
         expect(transformFile(fixture('consumer-package.ts'))).toMatchInlineSnapshot(`
-"export DPkg from "../node_modules/d/main.ts";
-export EPkg from "../node_modules/e/main.js";
-export FPkg from "../node_modules/f/main.js";
+"export DPkg from "./node_modules/d/main.ts";
+export EPkg from "./node_modules/e/main.js";
+export FPkg from "./node_modules/f/main.js";
 export { NotFound } from 'comps';
+export var a = 2;
 import E from 'e';"
 `)
     });
@@ -68,10 +69,11 @@ import E from 'e';"
     }
   }
 })).toMatchInlineSnapshot(`
-"export DPkg from "../node_modules/d/main.ts";
-export EPkg from "../node_modules/e/main.es.js";
-export FPkg from "../node_modules/f/main.browser.js";
+"export DPkg from "./node_modules/d/main.ts";
+export EPkg from "./node_modules/e/main.es.js";
+export FPkg from "./node_modules/f/main.browser.js";
 export { NotFound } from 'comps';
+export var a = 2;
 import E from 'e';"
 `)
     });
@@ -83,6 +85,7 @@ import E from 'e';"
 export EPkg from "e";
 export FPkg from "f";
 export { NotFound } from 'comps';
+export var a = 2;
 import E from 'e';"
 `)
     });
